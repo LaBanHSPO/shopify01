@@ -317,9 +317,9 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Collapsible row",
-            "heading_size": "medium",
+            "heading_size": "small",
             "icon": "check_box",
-            "filled_icon": false,
+            "filled_icon": true,
             "collapse_icon": "carret",
             "display_top_border": true,
             "open": false,
