@@ -424,6 +424,13 @@
               "margin_top": 12,
               "margin_bottom": 12
             }
+          },
+          "custom_liquid_rLM4nq": {
+            "type": "custom_liquid",
+            "settings": {
+              "position": "footer",
+              "custom_liquid": "{% comment %}\n  Shipping Estimate Banner\n  - Shows estimated delivery date (3-5 days range)\n  - Displays free shipping threshold\n  - Dynamically displays visitor's country using external flag API\n{% endcomment %}\n{% assign today_date = 'now' | date: '%s' %}\n{% assign early_delivery = today_date | plus: 432000  | date: '%b %-d' %}\n{% assign late_delivery = today_date | plus: 432000| date: '%b %-d' %}\n\n<style>\n.shipping-estimate {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    margin: 10px 0 0 0;\n}\n.shipping-estimate__delivery {\n    align-items: center;\n    gap: 5px;\n    color: #000000;\n    font-size: 14px;\n    line-height: 19px;\n    display: flex;\n}\n.shipping-estimate__icon {\n    color: #00A669;\n}\n.shipping-estimate__date {\n    font-weight: 500;\n}\n.shipping-estimate__free {\n    align-items: center;\n    gap: 5px;\n    color: #000000;\n    font-size: 14px;\n    line-height: 19px;\n    display: flex;\n}\n.shipping-estimate__flag {\n    width: 16px;\n    height: 12px;\n    border-radius: 2px;\n}\n.pulse-dot {\n    width: 10px;\n    height: 10px;\n    background-color: #00B67A;\n    border-radius: 50%;\n    margin-right: 8px;\n    position: relative;\n\t\tdisplay: block !important;\n}\n.pulse-dot::after {\n    content: \"\";\n    width: 10px;\n    height: 10px;\n    background: #00B67A;\n    display: flex;\n    transform: unset;\n    border-radius: 100%;\n    animation: pulse 1.5s infinite;\n}\n@keyframes pulse {\n    0% {\n      transform: scale(1);\n      opacity: 1;\n    }\n    70% {\n      transform: scale(2);\n      opacity: 0;\n    }\n    100% {\n      transform: scale(2);\n      opacity: 0;\n    }\n}\n@media (max-width: 639px) { \n  .shipping-estimate__free, .shipping-estimate__delivery  {\n    font-size: 14px;\n    line-height: normal;\n  }\n}\n</style>\n\n<div class=\"shipping-estimate\">\n  <div class=\"shipping-estimate__delivery\">\n    <span class=\"shipping-estimate__icon\">\n      <div class=\"pulse-dot\"></div>\n    </span>\n    <span>Delivered by <span class=\"shipping-estimate__date\">{{ early_delivery }}</span></span>\n  </div>\n  <div class=\"shipping-estimate__free\">\n    <img id=\"country-flag\" src=\"https://flagcdn.com/w20/us.png\" alt=\"Country Flag\" class=\"shipping-estimate__flag\" width=\"16\" height=\"12\" loading=\"lazy\">\n    <span id=\"shipping-free-text\"><strong>FREE</strong> US Shipping</span>\n  </div>\n</div>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  // Fetch the visitor's country using an IP geolocation API\n  fetch('https://get.geojs.io/v1/ip/geo.json')\n    .then(response => response.json())\n    .then(data => {\n      const countryCode = data.country_code;\n      const countryName = data.country;\n      \n      // Update flag image\n      const flagUrl = `https://flagcdn.com/w20/${countryCode.toLowerCase()}.png`;\n      const countryFlagElement = document.getElementById('country-flag');\n      if (countryFlagElement) {\n        countryFlagElement.src = flagUrl;\n        countryFlagElement.alt = `${countryName} Flag`;\n      }\n      \n      // Update shipping text dynamically with Shopify currency\n      const shippingTextElement = document.getElementById('shipping-free-text');\n      const currencySymbol = \"{{ cart.currency.symbol }}\"; // Fetches the store's currency symbol\n      const freeShippingAmount = 50; // Adjust this value based on location if needed\n      \n      if (shippingTextElement) {\n        shippingTextElement.innerHTML = `<strong>FREE</strong> Shipping over ${currencySymbol}${freeShippingAmount}`;\n      }\n    })\n    .catch(error => {\n      console.error('Error fetching the country information:', error);\n    });\n});\n</script>"
+            }
           }
         },
         "block_order": [
@@ -435,7 +442,8 @@
           "631b0e34-4299-400e-9f4d-c107c08cce01",
           "4f3e2a5f-006d-40ed-8370-49b15e0e427d",
           "0935e47c-9604-4faa-b47a-d61ca49c0c16",
-          "68fdc0a0-cd7c-40b9-97b3-a76eb7917a47"
+          "68fdc0a0-cd7c-40b9-97b3-a76eb7917a47",
+          "custom_liquid_rLM4nq"
         ],
         "settings": {
           "test_mode": false,
