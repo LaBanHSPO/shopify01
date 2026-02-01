@@ -93,7 +93,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "children-love",
+        "collection": "zen-journal-gifts",
         "products_to_show": 4,
         "title": "Choose Your Guardian",
         "heading_size": "h1",
