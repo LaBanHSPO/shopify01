@@ -17,8 +17,8 @@
         "footer-2": {
           "type": "text",
           "settings": {
-            "heading": "Your Peace Funds Our Mission",
-            "subtext": "<p>Zen Journal app is a free, privacy-focused project built by an indie developer for anyone who needs a barrier against toxic office vibes and life’s noise</p>"
+            "heading": "<strong>Your Peace Funds Our Mission</strong>",
+            "subtext": "<p>Zen Journal app is a free, privacy-focused project built by an indie developer for anyone who needs a barrier against toxic office vibes and life's noise</p>"
           }
         }
       },
