@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -11,7 +20,8 @@
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -21,16 +31,19 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -40,14 +53,15 @@
           }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {}
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Materials",
             "icon": "leather",
-            "content": "",
+            "content": "<p><em>Crafted from </em><em><strong>High-Precision UTR 8360 Resin</strong></em><em>.\"</em></p><p><em>\"Unlike standard 3D prints, this totem features a </em><em><strong>smooth, ceramic-like finish</strong></em><em> that feels cool and solid to the touch. It arrives in </em><em><strong>Pure Zen White</strong></em><em> – a blank canvas perfect for minimalist setups, or ready for you to paint and customize your own mascot</em></p>",
             "page": ""
           }
         },
@@ -74,7 +88,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "",
+            "content": "<ul><li><strong>Protection:</strong> Always wear nitrile gloves and eye protection when handling uncured resin and during cleaning.</li><li><strong>Waste Disposal:</strong> Do not pour resin-contaminated IPA down the drain. Cure the contaminated alcohol in the sun, filter out the plastic, and dispose of it safely.</li><li><strong>Printer Maintenance:</strong> Clean the resin vat and check for leaks regularly. Filter unused resin back into the bottle if not printing for a long time. </li></ul>",
             "page": ""
           }
         },
@@ -102,49 +116,40 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
-        "media_size": "large",
+        "color_scheme": "",
+        "media_size": "small",
         "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
         "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "hover",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
+    "176999116097301afb": {
+      "type": "apps",
       "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
+        "confira3d_confira3d_viewer_pAC7bQ": {
+          "type": "shopify://apps/confira3d/blocks/confira3d-viewer/019b8c59-a80a-7803-a940-b12743ae35c4",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
+            "initial_mode": "images",
+            "label_view_3d": "View in 3D",
+            "label_view_photos": "View images",
+            "label_loading": "Loading 3D...",
+            "label_unavailable": "3D unavailable",
+            "label_error": "3D error"
           }
         }
       },
       "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
+        "confira3d_confira3d_viewer_pAC7bQ"
       ],
       "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "scheme-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "include_margins": true
       }
     },
     "multicolumn": {
@@ -154,7 +159,7 @@
           "type": "column",
           "settings": {
             "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -163,7 +168,7 @@
           "type": "column",
           "settings": {
             "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -178,14 +183,14 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -195,13 +200,15 @@
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
+        "products_to_show": 4,
         "columns_desktop": 4,
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
       }
@@ -209,7 +216,7 @@
   },
   "order": [
     "main",
-    "image-with-text",
+    "176999116097301afb",
     "multicolumn",
     "related-products"
   ]
