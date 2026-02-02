@@ -152,6 +152,37 @@
         "include_margins": true
       }
     },
+    "rich_text_PeaCPz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RmBaeV": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Bring him home</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_jNAaM9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Just like the \"Energy Shield\" feature in the <strong>Zen Journal</strong> app protects your digital privacy, this little guardian sits on your desk to protect your real-world energy. He is your tangible reminder that amidst the chaos of deadlines and errors, you possess a quiet center that cannot be disturbed.</p><p><strong>The Ritual:</strong> When the stress rises, or the screen becomes too much:</p><ol><li><strong>Look</strong> at your Zen Anchor.</li><li><strong>Disconnect</strong> for just one minute.</li><li><strong>Breathe.</strong> (In for 4, Hold for 7, Out for 8).</li></ol><p><strong>Why this matters:</strong></p><ul><li><strong>A Physical \"Notification\":</strong> Your phone notifies you to work. The Zen Anchor notifies you to rest.</li><li><strong>The Art of Stillness:</strong> Crafted with a minimalist aesthetic and a gentle, upward gaze that inspires optimism and calm.</li><li><strong>Fuel the Mission:</strong> <strong>Zen Journal</strong> is free, private, and ad-free because your peace shouldn't be a product. 100% of the proceeds from this anchor go directly back into developing the app, keeping your data encrypted and your mind clear.</li></ul><p> </p><p><strong>Bring him home.</strong></p><p><strong>Place him next to your monitor.</strong></p><p><strong>Let him be the guardian of your focus.</strong></p><p><em>Because you can’t pour from an empty cup.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RmBaeV",
+        "text_jNAaM9"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -217,6 +248,7 @@
   "order": [
     "main",
     "176999116097301afb",
+    "rich_text_PeaCPz",
     "multicolumn",
     "related-products"
   ]
