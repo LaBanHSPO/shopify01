@@ -1,0 +1,419 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "tab_materials": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "<p>Printed on <strong>premium magnetic substrate</strong> — a flexible yet rigid sheet with a powerful adhesive magnet backing. The print surface uses a <strong>high-gloss or matte finish UV coating</strong> for vibrant, long-lasting color reproduction. Die-cut to your exact shape using precision cutting machines for clean, sharp edges.</p>",
+            "page": ""
+          }
+        },
+        "tab_design_req": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Design Requirements",
+            "icon": "clipboard",
+            "content": "<ul><li><strong>Accepted formats:</strong> PNG, PDF, AI, PSD, SVG</li><li><strong>Minimum resolution:</strong> 300 DPI at final print size</li><li><strong>Color mode:</strong> CMYK recommended for accurate color output</li><li><strong>Bleed:</strong> Include 3 mm bleed on all edges</li><li><strong>Safe zone:</strong> Keep important content at least 3 mm from the trim line</li><li><strong>Shape outline:</strong> If ordering a custom shape, include a separate cut-line layer</li></ul>",
+            "page": ""
+          }
+        },
+        "tab_dimensions": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "<ul><li><strong>Small:</strong> up to 5 × 8 cm</li><li><strong>Medium:</strong> up to 7 × 11 cm</li><li><strong>Large:</strong> up to 10 × 15 cm</li><li><strong>Custom size:</strong> contact us before ordering for a quote</li></ul><p>Thickness: approx. 0.8 mm (magnet layer included).</p>",
+            "page": ""
+          }
+        },
+        "tab_shipping": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "<p><strong>Production:</strong> 3–5 business days.</p><p><strong>Standard shipping:</strong> 7–14 business days after dispatch.</p><p>Custom-printed items are <strong>non-refundable</strong> unless the product arrives defective or damaged. Please double-check your artwork before submitting — we print exactly what you provide.</p>",
+            "page": ""
+          }
+        },
+        "tab_care": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "<ul><li>Wipe clean with a <strong>dry or slightly damp cloth</strong>. Avoid soaking in water.</li><li>Do not expose to <strong>extreme heat</strong> (e.g., direct sunlight for extended periods) as this may warp the substrate.</li><li>Keep away from <strong>electronic devices</strong> sensitive to magnetic fields (e.g., credit cards, hard drives, pacemakers).</li><li>Suitable for most <strong>metal surfaces</strong>: fridges, whiteboards, filing cabinets.</li></ul>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "tab_materials",
+        "tab_design_req",
+        "tab_dimensions",
+        "tab_shipping",
+        "tab_care",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "how_it_works_heading": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_how": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>How It Works</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_how": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ordering a custom magnet bookmark is simple. Follow these four steps and we handle the rest — from printing to delivery.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_how",
+        "text_how"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 12
+      }
+    },
+    "how_it_works_steps": {
+      "type": "multicolumn",
+      "blocks": {
+        "step-1": {
+          "type": "column",
+          "settings": {
+            "title": "1. Choose Your Shape",
+            "text": "<p>Pick from our preset bookmark shapes or go fully custom — upload your own silhouette outline.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "step-2": {
+          "type": "column",
+          "settings": {
+            "title": "2. Upload Your Design",
+            "text": "<p>Submit your artwork in PNG, PDF, or AI format. Our team reviews it and confirms before printing.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "step-3": {
+          "type": "column",
+          "settings": {
+            "title": "3. We Print & Cut",
+            "text": "<p>Precision digital printing with vivid CMYK inks, then die-cut to your exact shape with clean edges.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "step-4": {
+          "type": "column",
+          "settings": {
+            "title": "4. Delivered to You",
+            "text": "<p>Carefully packaged and shipped straight to your door, ready to use or gift.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 52
+      }
+    },
+    "design_requirements": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dr": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Design File Requirements</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_dr": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Accepted formats:</strong> PNG, PDF, AI, PSD, SVG</p><p><strong>Minimum resolution:</strong> 300 DPI at final print size — lower resolution files may result in blurry output.</p><p><strong>Color mode:</strong> CMYK recommended for the most accurate on-press color reproduction. RGB files are accepted but colors may shift slightly.</p><p><strong>Bleed:</strong> Include a 3 mm bleed on all edges so the print extends beyond the cut line with no white borders.</p><p><strong>Safe zone:</strong> Keep all important content (text, logos, key artwork) at least 3 mm from the trim line to avoid being clipped during cutting.</p><p>Not sure if your file is ready? <a href=\"/pages/contact\">Contact us</a> and we'll review it for free before you place your order.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dr",
+        "text_dr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "production_timeline": {
+      "type": "multicolumn",
+      "blocks": {
+        "prod": {
+          "type": "column",
+          "settings": {
+            "title": "Production",
+            "text": "<p>3–5 business days for printing, quality check, and die-cutting.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "ship": {
+          "type": "column",
+          "settings": {
+            "title": "Shipping",
+            "text": "<p>7–14 business days standard international delivery after dispatch.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "total": {
+          "type": "column",
+          "settings": {
+            "title": "Total Estimate",
+            "text": "<p>Approximately 10–20 business days from the moment you place your order.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "prod",
+        "ship",
+        "total"
+      ],
+      "settings": {
+        "title": "Production & Shipping Timeline",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "faq-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What file formats do you accept?",
+            "icon": "none",
+            "row_content": "<p>We accept PNG, PDF, AI, PSD, and SVG files. The minimum resolution is 300 DPI at the final print size. Files below this threshold may produce blurry results.</p>",
+            "page": ""
+          }
+        },
+        "faq-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I order any shape?",
+            "icon": "none",
+            "row_content": "<p>Yes! You can upload your own shape outline (as a separate cut-line layer in your file) or choose from our preset bookmark shapes during checkout. There is no restriction on complexity.</p>",
+            "page": ""
+          }
+        },
+        "faq-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the minimum order quantity?",
+            "icon": "none",
+            "row_content": "<p>The minimum order quantity is <strong>1 piece</strong>. There is no bulk requirement, so you can test a single design before scaling up.</p>",
+            "page": ""
+          }
+        },
+        "faq-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How strong is the magnet?",
+            "icon": "none",
+            "row_content": "<p>The magnets use a <strong>strong neodymium-grade flexible magnet</strong> backing. They will securely hold several sheets of paper on standard metal surfaces such as refrigerators, filing cabinets, and magnetic whiteboards.</p>",
+            "page": ""
+          }
+        },
+        "faq-5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are the magnets safe for children?",
+            "icon": "none",
+            "row_content": "<p>This product contains a small magnet and is <strong>not suitable for children under 3 years of age</strong>. Keep away from children who may swallow small parts. The magnet is also not recommended near pacemakers or implantable electronic devices.</p>",
+            "page": ""
+          }
+        },
+        "faq-6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "none",
+            "row_content": "<p>Because every item is custom-printed to your design, we are <strong>unable to accept returns or exchanges</strong> unless the product arrives defective or damaged. Please review your artwork carefully before submitting. If there is a production error on our end, we will reprint or refund at no cost to you.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "faq-5",
+        "faq-6"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "how_it_works_heading",
+    "how_it_works_steps",
+    "design_requirements",
+    "production_timeline",
+    "faq",
+    "related-products"
+  ]
+}
